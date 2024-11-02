@@ -1,7 +1,9 @@
+import { Heading, List, Box } from "@chakra-ui/react"
+
 const Checklist = () => {
     const before = [
         {
-            title: "Make plans to stay safe:",
+            title: "Make Plans to Stay Safe:",
             elements: [
                 "If advised to evacuate, do so immediately",
                 "Mobile, manufactured, trailer homes and recreational vehicles are not safe in high winds",
@@ -10,7 +12,7 @@ const Checklist = () => {
             ]
         },
         {
-            title: "Plan to stay connected:",
+            title: "Plan to Stay Connected:",
             elements: [
                 "Sign up for free emergency alerts from your local government",
                 "Monitor local weather and news",
@@ -19,7 +21,7 @@ const Checklist = () => {
             ]
         },
         {
-            title: "Gather emergency supplies:",
+            title: "Gather Emergency Supplies:",
             elements: [
                 "Gather food, water, and medicine as stores and pharmacies may be closed",
                 "Have backup batteries and chargers for your devices",
@@ -29,19 +31,19 @@ const Checklist = () => {
             ]
         },
         {
-            title: "Protect your home:",
+            title: "Protect your Home:",
             elements: [
                 "Secure outdoor items such as furniture or trash cans inside",
                 "Trim or remove trees close enough to fall on your home",
                 "Protect windows with permanent storm shutters or sheeting",
-                "HReview insurance policies with your agency"
+                "Review insurance policies with your agency"
             ]
         }
     ]
 
     const during = [
         {
-            title: "If local authorities advise you to evacuate, go right away:",
+            title: "If Local Authorities Advise you to Evacuate, Go Right Away:",
             elements: [
                 "Bring necessary supplies with you such as food, water, and medicine",
                 "Follow evacuation routes and do not try to take shortcuts",
@@ -49,11 +51,11 @@ const Checklist = () => {
             ]
         },
         {
-            title: "Determine your best protection for high winds and flooding:",
+            title: "Determine your Best Protection for High Winds and Flooding:",
             elements: [
                 "Take shelter in a designated storm shelter or an interior room for high winds",
                 "Stay away from glass windows and doors",
-                " Move to higher ground if flooding is imminent",
+                "Move to higher ground if flooding is imminent",
             ]
         },
         {
@@ -101,9 +103,11 @@ const Checklist = () => {
         }
     ]
     return (
+        <>
         <ChecklistSection section={before}/>,
         <ChecklistSection section={during}/>,
         <ChecklistSection section={after}/>
+        </>
     )
 }
 
@@ -111,18 +115,22 @@ const ChecklistSection = ({section}) => {
     return (
         <div>
             {section.map((section, index) => (
-                //used chatgpt to help format the html for iterate through a checklist made of an array of objects
+                //used chatgpt to help format a skeleton for the html to iterate through a checklist made of an array of objects
                 <div key={index}>
-                    <h1>{section.title}</h1>
-                    <ul>
-                        {section.elements.map((element, idx) => (
-                            <li key={idx}>{element}</li>
-                        ))}
-                    </ul>
+                    <Box padding="3">
+                        <Heading textStyle={"3xl"}>{section.title}</Heading>
+                            <Box padding="3">
+                                <List.Root>
+                                {section.elements.map((element, idx) => (
+                                <List.Item key={idx}>{element}</List.Item>
+                                ))}
+                                </List.Root>
+                            </Box>
+                    </Box>
                 </div>
             ))}
         </div>
-    );
-};
+    )
+}
 
 export default Checklist
