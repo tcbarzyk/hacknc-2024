@@ -10,6 +10,7 @@ import { VStack } from "@chakra-ui/react"
 import { Link as ChakraLink} from "@chakra-ui/react"
 import { Heading } from "@chakra-ui/react"
 import Checklist from './components/Checklist'
+import EmergencyPlan from './components/EmergencyPlan'
 import { Container } from "@chakra-ui/react"
 
 function App() {
@@ -26,7 +27,7 @@ function App() {
           <Route path="/after" element={<After/>}/>
           <Route path="/before/before-checklist" element={<p>before-checklist</p>}/>
           <Route path="/before/hurricane-tracker" element={<p>hurricane-tracker</p>}/>
-          <Route path="/before/emergency-plan" element={<p>emergency-plan</p>}/>
+          <Route path="/before/emergency-plan" element={<EmergencyPlan/>}/>
           <Route path="/during/emergency-info" element={<p>emergency-info</p>}/>
           <Route path="/after/after-checklist" element={<p>after-checklist</p>}/>
           <Route path="/after/contact-info" element={<p>contact-info</p>}/>
