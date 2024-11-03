@@ -17,4 +17,4 @@
 - Local Weather API (https://www.weather.gov/documentation/services-web-api)
 - RedCross (https://www.redcross.org/content/dam/redcross/get-help/pdfs/hurricane/EN_Hurricane-Safety-Checklist.pdf)
 
-Created for HackNC 2024 by Teddy, Aayush, James, and Jackson
+Created for HackNC 2024 by Teddy, Aayush, @jamesellisunc, and Jackson
