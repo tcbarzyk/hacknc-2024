@@ -2,13 +2,17 @@
 
 ## Project Description
 ReadyNow is a website that centralizes information and live updates about hurricanes informing users about when and where hurricanes will land, as well as how to stay safe in emergency situations. ReadyNow is split into three sections, 'Before, 'During' and 'After' a hurricane lands, each with corresponding information and alerts to the user's current state. The 'Before' section, consists of a safety checklist telling users how they can prepare for when a hurricane hits, a hurricane tracker that shows radar tracking of current hurricanes and tropical storms, an emergency plan generator for users, as well as local forecast data and alerts of the user's location. Next, the 'During' section contains information about what to do if the user is in an emergency situation during a hurricane. Finally, the 'After' section contains information about how to stay safe in the aftermath of a hurricane, as well as ABC News updates and reporting about hurricanes. Overall, ReadyNow is meant to be a consolidated source for users to easily stay informed and safe from hurricanes.
-## Judging Criteria
-1. Does the project have any feasible application and/or have a social impact that goes above and beyond? Will this help the community with a real problem they are facing? Can this be implemented? Will people find value and use your project?
-2. Is the project free of major bugs? Does it look appealing? The UI/UX doesn’t have to be absolutely perfect, but if we're having a hard time understanding the project by looking at it, there may be a problem.
-3. Is this project unique and innovative? Is it a solution or creation we have never seen before? A better way of doing something?
-4. The team should display a good level of knowledge in terms of the technology they’ve used in implementing their project.
-5. The team is able to fully present the functionalities of their project, including what they wish to expand on in the future.
 
+## Judge Questions
+1. Does the project have any feasible application and/or have a social impact that goes above and beyond? Will this help the community with a real problem they are facing? Can this be implemented? Will people find value and     use your project?
+   Our project is practical and significant social impact, especially given the severity of the 2024 hurricane season. For our group specifically, our loved ones faced many devastating losses and their communities were       
+   destroyed. With the gradually increase in severity of hurricanes year after year, there is a clear issue that needs to be addressed, lack of preparedness and information. ReadyNow addresses this issue by consolidating 
+   essential resources in a user-friendly platform.
+2. Is this project unique and innovative? Is it a solution or creation we have never seen before? A better way of doing something?
+   This project provides a better way to prepare for hurricanes by consolidating all of the most important information necessary to stay safe and informed during severe storms.  
+3. What are our plans for expanding on the project in the future
+   In the future, we plan to refine the UI and implement location-based features that allow users to find local storm shelters and receive notifications about power outages and road closures in their area.
+   
 ## References:
 - ABCNews (https://abcnews.go.com/alerts/hurricanes)
 - Chakra UI (https://www.chakra-ui.com/docs/get-started/installation)
