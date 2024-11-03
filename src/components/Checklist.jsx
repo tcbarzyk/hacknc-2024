@@ -1,6 +1,6 @@
-import { Heading, List, Box } from "@chakra-ui/react"
+import { Heading, List, Box, VStack } from "@chakra-ui/react"
 
-const Checklist = () => {
+const Checklist = ({ time }) => {
     const before = [
         {
             title: "Make Plans to Stay Safe:",
@@ -102,13 +102,27 @@ const Checklist = () => {
             ] 
         }
     ]
-    return (
-        <>
-        <ChecklistSection section={before}/>,
-        <ChecklistSection section={during}/>,
-        <ChecklistSection section={after}/>
-        </>
-    )
+    if (time === "before") {
+      return (
+        <VStack padding="20px">
+          <ChecklistSection section={before}/>
+        </VStack>
+      )
+    }
+    else if (time === "during") {
+      return (
+        <VStack padding="20px">
+          <ChecklistSection section={during}/>
+        </VStack>
+      )
+    }
+    else if (time === "after") {
+      return (
+        <VStack padding="20px">
+          <ChecklistSection section={after}/>
+        </VStack>
+      )
+    }
 }
 
 const ChecklistSection = ({section}) => {

@@ -6,12 +6,10 @@ import {
   Routes, Route, Link
 } from 'react-router-dom'
 import { Provider } from "./components/ui/provider"
-import { VStack } from "@chakra-ui/react"
-import { Link as ChakraLink} from "@chakra-ui/react"
-import { Heading } from "@chakra-ui/react"
+import { Heading, Container, VStack, Link as ChakraLink } from "@chakra-ui/react"
 import Checklist from './components/Checklist'
 import EmergencyPlan from './components/EmergencyPlan'
-import { Container } from "@chakra-ui/react"
+import Newsfeed from './components/Newsfeed'
 
 
 function App() {
@@ -26,13 +24,13 @@ function App() {
           <Route path="/before" element={<Before/>}/>
           <Route path="/during" element={<During/>}/>
           <Route path="/after" element={<After/>}/>
-          <Route path="/before/before-checklist" element={<p>before-checklist</p>}/>
+          <Route path="/before/before-checklist" element={<Checklist time="before"/>}/>
           <Route path="/before/hurricane-tracker" element={<p>hurricane-tracker</p>}/>
           <Route path="/before/emergency-plan" element={<EmergencyPlan/>}/>
-          <Route path="/during/emergency-info" element={<p>emergency-info</p>}/>
-          <Route path="/after/after-checklist" element={<p>after-checklist</p>}/>
+          <Route path="/during/emergency-info" element={<Checklist time="during"/>}/>
+          <Route path="/after/after-checklist" element={<Checklist time="after"/>}/>
           <Route path="/after/contact-info" element={<p>contact-info</p>}/>
-          <Route path="/after/hurricane-news" element={<p>hurricane-news</p>}/>
+          <Route path="/after/hurricane-news" element={<Newsfeed/>}/>
         </Routes>
       </Router>
     </Provider>
@@ -103,7 +101,7 @@ const TopBar = () => {
     <Container backgroundColor="#0092ca" paddingX="200px" paddingY="10px">
       <ChakraLink asChild color="black" fontWeight="bold" textStyle="5xl">
         <Link to="/">
-          Hurricane Readiness
+          ReadyNow
         </Link>
       </ChakraLink>
     </Container>
