@@ -1,28 +1,29 @@
 import { useState } from 'react'
 //import './App.css'
+import { Link, Heading, VStack, Card, HStack, List } from "@chakra-ui/react"
+
 
 function HurricaneTracker() {
   
   return (
-    
-    <div>
-      <p style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '10vh' }}><strong>Live Hurricane Tracking Interactive Map </strong></p>
-      <p style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+    <VStack padding="30px">
+      <HStack>
+      <Card.Root width="320px">
+        <Card.Body gap="1" bg="#BEBEBE">
+          <Card.Title color="black">Useful Links</Card.Title>
+          <Card.Description>
+            <List.Root>
+              <List.Item><Link color="black" href="https://gis-fema.hub.arcgis.com/pages/hurricanes">Explore Map</Link></List.Item>
+              <List.Item><Link color="black" href="https://weather.com/">Weather Channel</Link></List.Item>
+              <List.Item><Link color="black" href="https://cnrse.cnic.navy.mil/Installations/NS-Mayport/About/Hurricane-Information/Terms/Hurricane-Categories/">Understanding Hurricane Categories</Link></List.Item>
+            </List.Root>
+          </Card.Description>
+        </Card.Body>
+      </Card.Root>
+      <Heading color="black" textStyle="5xl" padding="20px">Live Hurricane Tracking Interactive Map</Heading>
+      </HStack>
       <iframe width="1300" height="700" frameborder="0" scrolling="no" allowfullscreen src="https://arcg.is/9r9uf0" ></iframe>
-      <ul>
-
-      <li><a  href="https://gis-fema.hub.arcgis.com/pages/hurricanes" target="_blank" rel="noopener noreferrer">
-            <strong>Explore Map</strong>
-        </a></li>
-      <li><a  href="https://weather.com/?cm_ven=PS_GGL_Branded_07222020_1&par=MK_GGL&tpcc=mktg-search-Google-acquisition&gad_source=1&gclid=Cj0KCQjwm5e5BhCWARIsANwm06ha09phTo9G-xmBAFauCIC3OcvKfvBHm1ak8H4NxpnDAkBULkhv5fMaAtC3EALw_wcB" target="_blank" rel="noopener noreferrer">
-            <strong>Weather Channel</strong>
-        </a></li>
-        <li><a  href="https://cnrse.cnic.navy.mil/Installations/NS-Mayport/About/Hurricane-Information/Terms/Hurricane-Categories/">
-            <strong>Understanding Hurricane Categories</strong>
-        </a></li>
-        </ul>
-        </p>
-    </div>
+    </VStack>
   )
 }
 

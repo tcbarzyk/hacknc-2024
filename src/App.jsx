@@ -1,6 +1,3 @@
-import { useState } from 'react'
-
-//import './App.css'
 import {
   BrowserRouter as Router,
   Routes, Route, Link
@@ -10,7 +7,7 @@ import { Heading, Container, VStack, Link as ChakraLink } from "@chakra-ui/react
 import Checklist from './components/Checklist'
 import EmergencyPlan from './components/EmergencyPlan'
 import Newsfeed from './components/Newsfeed'
-
+import HurricaneTracker from './components/HurricaneTracker'
 
 function App() {
   
@@ -25,7 +22,7 @@ function App() {
           <Route path="/during" element={<During/>}/>
           <Route path="/after" element={<After/>}/>
           <Route path="/before/before-checklist" element={<Checklist time="before"/>}/>
-          <Route path="/before/hurricane-tracker" element={<p>hurricane-tracker</p>}/>
+          <Route path="/before/hurricane-tracker" element={<HurricaneTracker/>}/>
           <Route path="/before/emergency-plan" element={<EmergencyPlan/>}/>
           <Route path="/during/emergency-info" element={<Checklist time="during"/>}/>
           <Route path="/after/after-checklist" element={<Checklist time="after"/>}/>
