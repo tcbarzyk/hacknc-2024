@@ -1,7 +1,7 @@
 # ReadyNow - Beginner Community Track
 
 ## Project Description
-ReadyNow is a website that centralizes information and live updates about hurricanes informing users about when and where hurricanes will land, as well as how to stay safe in emergency situations. ReadyNow is split into three sections, 'Before, 'During' and 'After' a hurricane lands, each with corresponding information and alerts to the user's current state. The 'Before' section, consists of a safety checklist telling users how they can prepare for when a hurricane hits, a hurricane tracker that shows radar tracking of current hurricanes and tropical storms, an emergency plan generator for users, as well as local forecast data and alerts of the user's location. Next, the 'During' section contains information about what to do if the user is in an emergency situation during a hurricane. Finally, the 'After' section contains information about how to stay safe in the aftermath of a hurricane, as well as ABC News updates and reporting about hurricanes. Overall, ReadyNow is meant to be a consolidated source for users to easily stay informed and safe from hurricanes.
+ReadyNow is a website that centralizes information and live updates about hurricanes informing users about when and where hurricanes will land, as well as how to stay safe in emergency situations. ReadyNow is split into three sections, 'Before, 'During' and 'After' a hurricane lands, each with corresponding information and alerts to the user's current state. The 'Before' section, consists of a safety checklist telling users how they can prepare for when a hurricane hits, a hurricane tracker that shows radar tracking of current hurricanes and tropical storms, an emergency plan generator for users, as well as local forecast data and alerts of the user's location. Next, the 'During' section contains information about what to do if the user is in an emergency situation during a hurricane. Finally, the 'After' section contains information about how to stay safe in the aftermath of a hurricane, as well as ABC News updates and reporting about hurricanes. Overall, ReadyNow is meant to be a consolidated source of hurricane information and alerts for users to easily stay informed and safe from hurricanes.
 
 ## Judge Questions
 1. Does the project have any feasible application and/or have a social impact that goes above and beyond? Will this help the community with a real problem they are facing? Can this be implemented? Will people find value and     use your project?
@@ -26,4 +26,4 @@ ReadyNow is a website that centralizes information and live updates about hurric
 - Local Weather API (https://www.weather.gov/documentation/services-web-api)
 - RedCross (https://www.redcross.org/content/dam/redcross/get-help/pdfs/hurricane/EN_Hurricane-Safety-Checklist.pdf)
 
-Created for HackNC 2024 by Teddy, Aayush, James, and Jackson
+Created for HackNC 2024 by Teddy, Ayush, James, and Jackson
