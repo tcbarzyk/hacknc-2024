@@ -12,7 +12,7 @@ function HurricaneTracker() {
       <ul>
 
       <li><a  href="https://gis-fema.hub.arcgis.com/pages/hurricanes" target="_blank" rel="noopener noreferrer">
-            <strong>Explore Map Further</strong>
+            <strong>Explore Map</strong>
         </a></li>
       <li><a  href="https://weather.com/?cm_ven=PS_GGL_Branded_07222020_1&par=MK_GGL&tpcc=mktg-search-Google-acquisition&gad_source=1&gclid=Cj0KCQjwm5e5BhCWARIsANwm06ha09phTo9G-xmBAFauCIC3OcvKfvBHm1ak8H4NxpnDAkBULkhv5fMaAtC3EALw_wcB" target="_blank" rel="noopener noreferrer">
             <strong>Weather Channel</strong>
