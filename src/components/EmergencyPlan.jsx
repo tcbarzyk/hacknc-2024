@@ -22,21 +22,27 @@ const EmergencyPlan = () => {
             <form onSubmit={onSubmit}>
               <Stack gap="4" align="flex-start" maxW="sm">
                 <Field label="Meeting Location">
-                  <Info text="You should have a meeting location in case of emergency"/>
+                  <Info text="You should have a meeting location in case of emergency."/>
                     <Input
                       {...register("location")}
                         />
                 </Field>
                 <Field label="Evacuation Plan">
-                  <Info text="If a hurricane is forecasted to hit your area, a safe evacuation from the area is crucial"/>
+                  <Info text="If a hurricane is forecasted to hit your area, a safe evacuation plan from the area is crucial."/>
                     <Input
                       {...register("evacuation")}
                         />
                 </Field>
-                <Field label="Evacuation Plan">
-                  <Info text="If a hurricane is forecasted to hit your area, a safe evacuation from the area is crucial"/>
+                <Field label="Emergency Contact">
+                  <Info text="You should have someone who you trust to contact in case of emergency."/>
                     <Input
-                      {...register("evacuation")}
+                      {...register("contact")}
+                        />
+                </Field>
+                <Field label="Medical Emergency Plan">
+                  <Info text="In case of a medical emergency, what will you do? Where will you go? Having an efficient plan in case of medical emergency is key."/>
+                    <Input
+                      {...register("medical")}
                         />
                 </Field>
                 <Button type="submit">Save Plan</Button>
