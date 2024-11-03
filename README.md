@@ -19,6 +19,8 @@ ReadyNow is a website that centralizes information and live updates about hurric
    In the future, we plan to refine the UI and implement location-based features that allow users to find local storm shelters and receive notifications about power outages and road closures in their area.
    
 ## References:
+- Built using React, Node.js, Axios
+- React pdf renderer (https://www.npmjs.com/package/@react-pdf/renderer)
 - ABCNews (https://abcnews.go.com/alerts/hurricanes)
 - Chakra UI (https://www.chakra-ui.com/docs/get-started/installation)
 - ChatGPT: fixed an issue w storing latitude and longitude values, structured a skeleton for the html for iterating through an array, realigning visuals in html(styling)
