@@ -99,7 +99,7 @@ const TopBar = () => {
         <Box textAlign="left">
           <ChakraLink asChild color="black" fontWeight="bold" textStyle="6xl">
             <Link to="/">
-              ReadyNow
+              ReadyNow Hurricane Readiness
             </Link>
           </ChakraLink>
         </Box>
